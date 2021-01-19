@@ -95,6 +95,10 @@ body {
         transform: translateX(-100px);
     }
 
+    50% {
+        /* transform: rotate(120deg); */
+    }
+
     80% {
         transform: translateX(10px);
     }
