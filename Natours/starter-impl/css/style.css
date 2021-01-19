@@ -48,6 +48,12 @@ body {
     height: 35px;
 }
 
+/** lesson support
+.logo:hover {
+    animation: moveInLeft 3s ease-in;
+}
+*/
+
 .text-box {
     position: absolute;
     top: 40%;
