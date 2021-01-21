@@ -17,16 +17,20 @@ Dark green: #28b485
 }
 
 html {
-    font-size: 62.5%;    /**   字形基本值，很容易透過rem進行調整   */
+    font-size: 10px;
+    /* font-size: 62.5%;     */
+    /**   字形基本值，很容易透過rem進行調整   */
     /*  基礎字型尺寸為16，又因為想透過百分比顯示，並且維持之前10倍設定rem的方式，所以採用62.5％做替換  */
 }
 
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
+    /* font-size: 16px; */
     font-size: 1.6rem;
     line-height: 1.7;
     color: #777;
+    /* padding: 30px; */
     padding: 3rem;
     box-sizing: border-box;
 }
@@ -49,8 +53,8 @@ body {
 
 .logo-box {
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 4rem;
+    left: 4rem;
 }
 
 .logo {
@@ -77,7 +81,7 @@ body {
     text-transform: uppercase;
 
     backface-visibility: hidden;    /* 有的時候可以解決掉動畫震動的問題 */
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
 }
 
 .heading-primary-main {
@@ -99,7 +103,7 @@ body {
 
 .heading-primary-sub {
     display: block;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 400;
     letter-spacing: 1.75rem;
 
@@ -117,7 +121,7 @@ body {
     }
 
     80% {
-        transform: translateX(10px);
+        transform: translateX(1rem);
     }
 
     100% {
@@ -188,7 +192,7 @@ body {
     display: inline-block;
     height: 100%;
     width: 100%;
-    border-radius: 100px;
+    border-radius: 10rem;
     position: absolute;
     top: 0;
     left: 0;
