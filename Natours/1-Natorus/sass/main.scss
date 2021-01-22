@@ -2,6 +2,9 @@ $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
 
+$color-grey-dark: #777;
+
+
 
 *,
 *::after,
@@ -25,7 +28,7 @@ body {
     /* font-size: 16px; */
     font-size: 1.6rem;
     line-height: 1.7;
-    color: #777;
+    color: $color-grey-dark;
     /* padding: 30px; */
     padding: 3rem;
     
@@ -180,7 +183,7 @@ body {
 
 .btn--white {
     background-color: #fff;
-    color: #777;
+    color: $color-grey-dark;
 }
 
 
