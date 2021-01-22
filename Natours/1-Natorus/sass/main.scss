@@ -3,6 +3,8 @@ $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
 
 $color-grey-dark: #777;
+$color-white: #fff;
+
 
 
 
@@ -77,7 +79,7 @@ body {
 }
 
 .heading-primary {
-    color: #fff;
+    color: $color-white;
     text-transform: uppercase;
 
     backface-visibility: hidden;    /* 有的時候可以解決掉動畫震動的問題 */
@@ -182,7 +184,7 @@ body {
 }
 
 .btn--white {
-    background-color: #fff;
+    background-color: $color-white;
     color: $color-grey-dark;
 }
 
@@ -201,7 +203,7 @@ body {
 }
 
 .btn--white::after{
-    background-color: #fff;
+    background-color: $color-white;
 }
 
 .btn:hover::after {
