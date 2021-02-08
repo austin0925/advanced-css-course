@@ -1,3 +1,19 @@
+/* MEDIA QUERY MANGER
+    0 - 600px           : phone
+    600 - 900px         : Tablet portrait
+    900 - 1200px        : Table Landscape
+    [1200px - 1800] is where our normal styles apply
+    1800px +            : Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general 
+
+**/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -35,9 +51,22 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 3rem; }
+
+@media (max-width: 56.25em) {
+  padding: 0; }
 
 body {
   font-family: "Lato", sans-serif;
@@ -112,20 +141,6 @@ body {
 
 .u-margin-top-huge {
   margin-top: 10rem !important; }
-
-.bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  opacity: .15;
-  overflow: hidden; }
-  .bg-video__content {
-    height: 100%;
-    width: 100%;
-    object-fit: cover; }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -610,7 +625,8 @@ body {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center; }
+    text-align: center;
+    /* background-color: red; */ }
 
 .navigation__checkbox {
   display: none; }
